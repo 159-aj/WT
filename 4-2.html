@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+   <title>form</title>
+   <style>
+       .center {
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+ width: 15%;
+}
+       .form{
+           
+           border: 2px solid black;
+         
+           
+       }
+   </style>
+   </head>
+<body>
+T Ajay<br>1602-17-737-006<br><br>
+
+  <img src="vlogo.gif" class="center" ><br>
+<div align="center">
+   <form align="center">
+       <h2> STUDENT REGISTRATION FORM</h2><br>
+       <br>
+   user name:
+   <input type="text" name="first name" required><br>
+   <br>
+   password:
+       <input type="password" name="password"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"><br>
+       <br>
+   email:
+       <input type="email" name="email" required><br>
+       <br>
+   phone:
+       <input type="tel" name="number" required><br>
+       <br>
+ 
+   Select Gender:
+     <div id="group1" required>
+       <input type="radio" name="male">Male
+       <input type="radio" name="female">Female
+       </div>
+       <br>
+       <br>
+   Select languages known:
+       <input type="checkbox" name="english">English
+       <input type="checkbox" name="hindi">Hindi
+       <input type="checkbox" name="telugu">Telugu<br>
+       <br>
+   Select state:
+       <select>
+       <option value="telangana">Telangana</option>
+       <option value="andhra pradesh">Andhra Pradesh</option>
+       </select><br>
+       <br>
+   Give your comment:<br>
+       <textarea name="comment" height="200" width="300"></textarea>
+       <br><br>
+   Select resume to upload:
+    <input type="file" id="myFile" ><br><br>  
+   <input type="submit" value="Submit Query">
+   <input type="submit" value="Reset">
+       
+</form></div>
+   </body>
+</html>

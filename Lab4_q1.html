@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Colour changer</title>
+         <script>
+var cols = {
+  "Light_Blue":"#ADD8E6",
+  "Light_Yellow":"#ffffb3",
+  "Light_Green":"#90EE90"
+}
+window.onload=function() {
+  var rads = document.getElementsByName("bgcRbtns");
+  for (var i=0;i<rads.length;i++) {
+    rads[i].onclick=function() {
+      document.body.style.backgroundColor=cols[this.value];
+    }
+  }
+}
+</script>
+    </head>
+<body>
+    <p><b>V.Anusha</b><br>
+    1602-17-737-007
+</p>
+<form>
+<p>Choose one colour :</p>
+<pre>
+<input type="radio" name="bgcRbtns" class="radioColor"
+value="Light_Blue">Light Blue
+<input type="radio" name="bgcRbtns" checked class="radioColor"
+value="Light_Yellow">Light Yellow
+<input
+type="radio" name="bgcRbtns" class="radioColor"
+value="Light_Green">Light Green
+</pre>
+You have chosen <span id="colorText"></span>
+<br>
+Count of radio buttons is : 3<span id="radioCount"></span>
+</form>
+</body>
+</html>
